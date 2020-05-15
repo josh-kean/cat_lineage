@@ -2,7 +2,7 @@ const fs = require('fs');
 let Web3 = require('web3');
 let kitties_json = require('./kitties.json');
 
-let web3 = new Web3("https://mainnet.infura.io/v3/3879733c67194b1191250b78f6083bb3"); 
+let web3 = new Web3(//removed infura key); 
 
 let kitties = new web3.eth.Contract(JSON.parse(kitties_json.result), "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d");
 
